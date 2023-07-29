@@ -1,0 +1,15 @@
+app:
+  name: hamburg-poi-map-app
+  namespace: hamburg
+  cluster: .apps.redhatdevhub.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-test/hamburg-frontend
+  org: devhub-test
+  name: hamburg-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hamburg/poi-map-app
+  tag: latest
